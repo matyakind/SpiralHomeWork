@@ -23,11 +23,8 @@ public class SpiralHomeWork {
         //Цикл
         while (c <= stepLimit) {
             while (east == true && iStepsinit != 0) {
-                System.out.println("Go to EAST---Steps to do: "+(iStepsinit-istep));
-                System.out.println("Cell - [" + iInd + "][" + jInd + "]");
                 arr[iInd][jInd] = c;
                 c++;
-                System.out.println("WRITE - " + arr[iInd][jInd]);
                 istep++;
                 //Проверка условия нахождения границы движения вправо
                 if (istep == iStepsinit) {
@@ -40,12 +37,9 @@ public class SpiralHomeWork {
                 jInd++;
             }
             while (south == true && jStepsinit != 0) {
-                System.out.println("Go to SOUTH---Steps to do: "+(jStepsinit-jstep));
                 iInd++;
-                System.out.println("Cell - [" + iInd + "][" + jInd + "]");
                 arr[iInd][jInd] = c;
                 c++;
-                System.out.println("WRITE - " + arr[iInd][jInd]);
                 jstep++;
                 //Проверка условия нахождения границы движения вниз
                 if (jstep == jStepsinit) {
@@ -58,12 +52,9 @@ public class SpiralHomeWork {
                 }
             }
             while (west == true && iStepsinit != 0) {
-                System.out.println("Go to WEST---Steps to do: "+(iStepsinit-istep));
                 jInd--;
-                System.out.println("Cell - [" + iInd + "][" + jInd + "]");
                 arr[iInd][jInd] = c;
                 c++;
-                System.out.println("WRITE - " + arr[iInd][jInd]);
                 istep++;
                 //Проверка условия нахождения границы движения вниз
                 if (istep == iStepsinit) {
@@ -75,12 +66,9 @@ public class SpiralHomeWork {
                 }
             }
             while (north == true && jStepsinit != 0) {
-                System.out.println("Go to NORTH---Steps to do: "+(jStepsinit-jstep));
                 iInd--;
-                System.out.println("Cell - [" + iInd + "][" + jInd + "]");
                 arr[iInd][jInd] = c;
                 c++;
-                System.out.println("WRITE - " + arr[iInd][jInd]);
                 jstep++;
                 //Проверка условия нахождения границы движения вниз
                 if (jstep == jStepsinit) {
